@@ -1,0 +1,140 @@
+﻿   Qt/MSBuild: 3.3.1.1
+  Reading Qt configuration (E:/Qt/6.7.2/msvc2019_64/bin/qmake)
+   Qt: 6.7.2
+  Udpserver.cpp
+D:\code\Channel_sim\Channel_sim\Udpserver.cpp(1,1): warning C4828: 文件包含在偏移 0x8b2 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Udpserver.cpp(1,1): warning C4828: 文件包含在偏移 0x8b3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Udpserver.cpp(1,1): warning C4828: 文件包含在偏移 0x8ba 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Udpserver.cpp(1,1): warning C4828: 文件包含在偏移 0x8bb 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Udpserver.cpp(1,1): warning C4828: 文件包含在偏移 0x8bd 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Udpserver.cpp(1,1): warning C4828: 文件包含在偏移 0x8c0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Udpserver.cpp(1,1): warning C4828: 文件包含在偏移 0x8c2 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Udpserver.cpp(1,1): warning C4828: 文件包含在偏移 0x8c3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Udpserver.cpp(1,1): warning C4828: 文件包含在偏移 0x903 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Udpserver.cpp(1,1): warning C4828: 文件包含在偏移 0x904 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Udpserver.cpp(1,1): warning C4828: 文件包含在偏移 0x908 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Udpserver.cpp(1,1): warning C4828: 文件包含在偏移 0x94e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Udpserver.cpp(1,1): warning C4828: 文件包含在偏移 0x94f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Udpserver.cpp(1,1): warning C4828: 文件包含在偏移 0x953 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Udpserver.cpp(1,1): warning C4828: 文件包含在偏移 0xa07 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Udpserver.cpp(1,1): warning C4828: 文件包含在偏移 0xa08 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Udpserver.cpp(1,1): warning C4828: 文件包含在偏移 0xa0c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Udpserver.cpp(1,1): warning C4828: 文件包含在偏移 0xac5 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Udpserver.cpp(1,1): warning C4828: 文件包含在偏移 0xac8 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Udpserver.cpp(1,1): warning C4828: 文件包含在偏移 0xacb 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Udpserver.cpp(1,1): warning C4828: 文件包含在偏移 0xacc 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Udpserver.cpp(1,1): warning C4828: 文件包含在偏移 0xad0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Udpserver.cpp(1,1): warning C4828: 文件包含在偏移 0xad2 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x19c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x19d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x1a0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x1a1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x1a7 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x1a9 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x1e1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x1e3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x1e4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x204 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x206 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x207 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x228 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x22a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x22b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x252 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x254 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x255 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x27b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x27d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x27e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x2a4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x2a6 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x2a7 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x2cc 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x2ce 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x2cf 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x2f4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x2f6 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(1,1): warning C4828: 文件包含在偏移 0x2f7 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Udpserver.cpp”)
+  
+D:\code\Channel_sim\Channel_sim\Udpserver.h(15,10): error C1083: 无法打开包括文件: “udp_with_ulpfec.h”: No such file or directory
+  (编译源文件“Udpserver.cpp”)
+  
+  Channel_sim.cpp
+D:\code\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x659 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x65a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x65e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x661 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x664 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x667 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x668 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x6b0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x6b2 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x6b4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x6b5 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\code\Channel_sim\Channel_sim\Channel_sim.h(5,10): error C1083: 无法打开包括文件: “QFileDialog”: No such file or directory
+  (编译源文件“Channel_sim.cpp”)
+  
+  main.cpp
+D:\code\Channel_sim\Channel_sim\Channel_sim.h(5,10): error C1083: 无法打开包括文件: “QFileDialog”: No such file or directory
+  (编译源文件“main.cpp”)
+  
+  正在生成代码...

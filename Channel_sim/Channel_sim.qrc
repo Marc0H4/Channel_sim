@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/Channel_sim">
+        <file>resouce/24gf-folderOpen-copy.png</file>
+        <file>resouce/file.png</file>
+        <file>resouce/avic.png</file>
+        <file>resouce/开始1.png</file>
+        <file>resouce/24gf-stop.png</file>
+        <file>resouce/飞机.png</file>
+        <file>resouce/列表视图.png</file>
+    </qresource>
+</RCC>
