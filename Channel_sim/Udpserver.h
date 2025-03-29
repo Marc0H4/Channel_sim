@@ -36,7 +36,7 @@ struct videoStruct
     unsigned char whichChannel; //1×Ö½Ú
     unsigned char videoFormat; //1×Ö½Ú
     unsigned short packetSize; //2×Ö½Ú
-    unsigned char videoData[1200] = { 0 };
+    unsigned char videoData[10000] = { 0 };
 };
 #pragma pack() 
 struct SendPacket {
@@ -69,6 +69,7 @@ private:
     QMutex queueMutex;
     QWaitCondition queueCondition;
     QList<QThread*> workerThreads;
+    int currentSocket = 0;
 
 	SendPacket packet{};
 	SendPacket packet_buffer{};

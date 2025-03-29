@@ -71,7 +71,6 @@ void Udpserver::fileReaderTask() {
         return;
     }
 
-    int currentSocket = 0;
     //SendPacket packet{
     //videoStruct {
     //    0x01,
@@ -87,19 +86,19 @@ void Udpserver::fileReaderTask() {
     //currentSocket
     //};
 	packet.video.sysWord = 0x01;
-	packet.video.idWord = static_cast<unsigned char>(currentSocket);
 	packet.video.nowTime = 1;
 	packet.video.versionNumber = 0x01;
 	packet.video.totalChannel = 0x06;
-	packet.video.whichChannel = static_cast<unsigned char>(currentSocket);
 	packet.video.videoFormat = 0x01;
 	packet.video.packetSize = 1009;
-	packet.socketIndex = currentSocket;
 	// ¶ÁÈ¡ÎÄ¼þ
     while (is_running && !file.atEnd()) {
         QByteArray buffer = file.read(packetSize);
         if (buffer.isEmpty()) break;
 
+        packet.video.idWord = static_cast<unsigned char>(currentSocket);
+        packet.video.whichChannel = static_cast<unsigned char>(currentSocket);
+        packet.socketIndex = currentSocket;
 
         memcpy(packet.video.videoData, buffer.constData(), buffer.size());
 
@@ -146,7 +145,7 @@ void Udpserver::socketWorkerTask(int socket_index) {
         if (packetFound && packet_buffer.video.videoData[0] != 0) {
             sendto_fec(
                 sockets[socket_index],      // socket
-                reinterpret_cast<char*>(packet_buffer.video.videoData),  // buf
+                reinterpret_cast<char*>(&packet_buffer.video),  // buf
                 sizeof(packet_buffer.video.sysWord) + sizeof(packet_buffer.video.idWord) +
                 sizeof(packet_buffer.video.nowTime) + sizeof(packet_buffer.video.versionNumber) + sizeof(packet_buffer.video.totalChannel) +
                 sizeof(packet_buffer.video.whichChannel) + sizeof(packet_buffer.video.videoFormat) + sizeof(packet_buffer.video.packetSize) + packetSize,              // length
@@ -158,6 +157,10 @@ void Udpserver::socketWorkerTask(int socket_index) {
                 3000000
             );
 			qDebug("send packet:%d", packet_buffer.video.sysWord);
+			//qDebug("size:%d", sizeof(packet_buffer.video.sysWord) + sizeof(packet_buffer.video.idWord) +
+   //             sizeof(packet_buffer.video.nowTime) + sizeof(packet_buffer.video.versionNumber) + sizeof(packet_buffer.video.totalChannel) +
+   //             sizeof(packet_buffer.video.whichChannel) + sizeof(packet_buffer.video.videoFormat) + sizeof(packet_buffer.video.packetSize) + packetSize);
+		    //	qDebug("channel:%d", packet_buffer.video.whichChannel);
         }
     }
 }

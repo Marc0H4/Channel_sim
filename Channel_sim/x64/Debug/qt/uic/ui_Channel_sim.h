@@ -21,6 +21,7 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QProgressBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QScrollBar>
 #include <QtWidgets/QStatusBar>
@@ -63,6 +64,7 @@ public:
     QHBoxLayout *horizontalLayout;
     QPushButton *Play_btn;
     QPushButton *Stop_btn;
+    QProgressBar *progressBar;
     QStatusBar *statusBar;
 
     void setupUi(QMainWindow *Channel_simClass)
@@ -217,6 +219,10 @@ public:
 
         horizontalLayout->addWidget(Stop_btn);
 
+        progressBar = new QProgressBar(dockWidgetContents);
+        progressBar->setObjectName("progressBar");
+        progressBar->setGeometry(QRect(340, 0, 251, 23));
+        progressBar->setValue(24);
         tooldock->setWidget(dockWidgetContents);
         Channel_simClass->addDockWidget(Qt::DockWidgetArea::BottomDockWidgetArea, tooldock);
         statusBar = new QStatusBar(Channel_simClass);
