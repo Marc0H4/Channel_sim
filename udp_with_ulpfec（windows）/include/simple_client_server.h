@@ -71,10 +71,8 @@
 #define SOCKET_ERROR	(-1)
 #endif
 
-#define DEST_IP		"127.0.0.1"	/* Destination IPv4 address */
-#define DEST_PORT	55556		/* Destination port (UDP) */
-
-//#define DEST_PORT	10978		/* Destination port (UDP) */
+#define DEST_IP		"225.0.10.101"	/* Destination IPv4 address */
+#define DEST_PORT	5557		/* Destination port (UDP) */
 
 #endif //SIMPLE_CLIENT_SERVER_H_
 

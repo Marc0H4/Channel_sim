@@ -1,82 +1,75 @@
 #pragma once
 #define SOCKET_POOL_SIZE 3
 #include <QObject>
-#define _WINSOCK_DEPRECATED_NO_WARNINGS
-#include <fstream>
-#include <stdio.h>
 #include <winsock2.h>
-#include <winsock.h>
-#include <iostream>
-#include <tchar.h>
-#include <time.h>
-#include <thread>
-#include <chrono>
-#include <vector>
-#include <memory>
-#include <string>
-#include "udp_with_ulpfec.h"
-#include "simple_client_server.h"
 #include <QMutex>
 #include <QWaitCondition>
-#include <QThread>
-#include <queue>
 #include <deque>
-#include <QFile>
-#include <Qqueue>
-#include <Ws2tcpip.h>
-#pragma comment(lib, "ws2_32.lib")
-#pragma pack(1) //按一个字节对齐
-struct videoStruct
-{
-    unsigned int  sysWord; //4字节
-    unsigned char idWord; //1字节
-    unsigned int  nowTime; //4字节
-    unsigned char versionNumber; //1字节
-    unsigned char totalChannel; //1字节
-    unsigned char whichChannel; //1字节
-    unsigned char videoFormat; //1字节
-    unsigned short packetSize; //2字节
-    unsigned char videoData[10000] = { 0 };
+#include <atomic>
+#include "udp_with_ulpfec.h"
+#include "simple_client_server.h"
+#pragma pack(1)
+struct videoStruct {
+    unsigned int  sysWord;       // 系统标识
+    unsigned char idWord;        // 通道标识
+    unsigned int  nowTime;       // 时间戳
+    unsigned char versionNumber; // 协议版本
+    unsigned char totalChannel;  // 总通道数
+    unsigned char whichChannel;  // 当前通道
+    unsigned char videoFormat;   // 视频格式
+    unsigned short packetSize;   // 数据包大小
+    unsigned char videoData[10000]; // 数据载荷
 };
-#pragma pack() 
+#pragma pack()
+
 struct SendPacket {
-  
-    struct videoStruct video;
-    int socketIndex;
+    videoStruct video;    // 视频数据包
+    int socketIndex;      // 目标Socket索引
 };
-class Udpserver : public QObject
-{
-	Q_OBJECT
+
+// 每个通道的独立上下文
+struct ChannelContext {
+    std::deque<SendPacket> packetQueue;  // 独立数据队列
+    QMutex queueMutex;                   // 队列专用锁
+    QWaitCondition queueCondition;       // 队列条件变量
+
+    QMutex stateMutex;                   // 状态控制锁
+    std::atomic<int> enabled{ 0 };         // 通道启用状态
+    std::atomic<double> lossRate{ 0.0 };   // 丢包率
+    QWaitCondition stateCondition;       // 状态条件变量
+};
+
+class Udpserver : public QObject {
+    Q_OBJECT
 public:
-	Udpserver(QObject* parent, QString desthost, int Port, int channel);
-	~Udpserver();
-    //file
-    QString currentFilePath;
-    bool is_running = false;
+    Udpserver(QObject* parent, QString desthost, int Port);
+    ~Udpserver();
+
+    // 核心功能接口
     void SetFileName(const QString& filePath);
-    const int packetSize = 1009;
-
     void StartSending();
-
+    void StopSending();
+    void channelStateChange(int channel, bool state);
+    void setLossRate(int channel, double rate);
 
 private:
-
-    //net
+    // 网络相关
     SOCKET sockets[SOCKET_POOL_SIZE];
-    SOCKADDR_IN targetAddr;
-    //thread
-    std::deque<SendPacket> packetQueue;
-    QMutex queueMutex;
-    QWaitCondition queueCondition;
-    QList<QThread*> workerThreads;
-    int currentSocket = 0;
+    sockaddr_in targetAddr;
 
-	SendPacket packet{};
-	SendPacket packet_buffer{};
-	void StopSending();
+    // 文件与队列
+    QMutex fileMutex;                   // 文件路径专用锁
+    QString currentFilePath;
+    std::atomic<int> currentSocket{ 0 };   // 轮询指针
+    const int packetSize = 1009;         // 数据包大小
+
+    // 通道管理
+    ChannelContext channels[SOCKET_POOL_SIZE];
+    QList<QThread*> workerThreads;
+    std::atomic<bool> is_running{ false }; // 运行状态
+
+    // 内部方法
     void initializeSockets();
     void fileReaderTask();
     void socketWorkerTask(int socket_index);
 };
-
-    
