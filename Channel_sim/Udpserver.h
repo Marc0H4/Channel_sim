@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #define SOCKET_POOL_SIZE 3
 #include <QObject>
 #include <winsock2.h>
@@ -10,36 +10,36 @@
 #include "simple_client_server.h"
 #pragma pack(1)
 struct videoStruct {
-    unsigned int  sysWord;       // ÏµÍ³±êÊ¶
-    unsigned char idWord;        // Í¨µÀ±êÊ¶
-    unsigned int  nowTime;       // Ê±¼ä´Á
-    unsigned char versionNumber; // Ğ­Òé°æ±¾
-    unsigned char totalChannel;  // ×ÜÍ¨µÀÊı
-    unsigned char whichChannel;  // µ±Ç°Í¨µÀ
-    unsigned char videoFormat;   // ÊÓÆµ¸ñÊ½
-    unsigned short packetSize;   // Êı¾İ°ü´óĞ¡
-    unsigned char videoData[10000]; // Êı¾İÔØºÉ
+    unsigned int  sysWord;       // ç³»ç»Ÿæ ‡è¯†
+    unsigned char idWord;        // é€šé“æ ‡è¯†
+    unsigned int  nowTime;       // æ—¶é—´æˆ³
+    unsigned char versionNumber; // åè®®ç‰ˆæœ¬
+    unsigned char totalChannel;  // æ€»é€šé“æ•°
+    unsigned char whichChannel;  // å½“å‰é€šé“
+    unsigned char videoFormat;   // è§†é¢‘æ ¼å¼
+    unsigned short packetSize;   // æ•°æ®åŒ…å¤§å°
+    unsigned char videoData[10000]; // è§†é¢‘æ•°æ®
 };
 #pragma pack()
 
 struct SendPacket {
-    videoStruct video;          // ÊÓÆµÊı¾İ°ü
-	uint32_t crc32;             // CRC32Ğ£Ñé
-	uint8_t stream_type;        // Á÷ÀàĞÍ
-	uint8_t channel_seq;        // Í¨µÀĞòÁĞºÅ
-    uint8_t channel_index;      // Ä¿±êSocketË÷Òı
+    videoStruct video;          // è§†é¢‘æ•°æ®åŒ…
+    uint32_t crc32;             // CRC32æ ¡éªŒ
+    uint8_t stream_type;        // æµç±»å‹
+    uint8_t channel_seq;        // é€šé“åºå·
+    uint8_t channel_index;      // ç›®æ ‡Socketç´¢å¼•
 };
 
-// Ã¿¸öÍ¨µÀµÄ¶ÀÁ¢ÉÏÏÂÎÄ
+// æ¯ä¸ªé€šé“çš„ä¸Šä¸‹æ–‡
 struct ChannelContext {
-    std::deque<SendPacket> packetQueue;  // ¶ÀÁ¢Êı¾İ¶ÓÁĞ
-    QMutex queueMutex;                   // ¶ÓÁĞ×¨ÓÃËø
-    QWaitCondition queueCondition;       // ¶ÓÁĞÌõ¼ş±äÁ¿
+    std::deque<SendPacket> packetQueue;  // æ•°æ®åŒ…é˜Ÿåˆ—
+    QMutex queueMutex;                   // é˜Ÿåˆ—ä¸“ç”¨é”
+    QWaitCondition queueCondition;       // é˜Ÿåˆ—æ¡ä»¶å˜é‡
 
-    QMutex stateMutex;                   // ×´Ì¬¿ØÖÆËø
-    std::atomic<int> enabled{ 0 };         // Í¨µÀÆôÓÃ×´Ì¬
-    std::atomic<double> lossRate{ 0.0 };   // ¶ª°üÂÊ
-    QWaitCondition stateCondition;       // ×´Ì¬Ìõ¼ş±äÁ¿
+    QMutex stateMutex;                   // çŠ¶æ€ä¸“ç”¨é”
+    std::atomic<int> enabled{ 0 };         // é€šé“å¯ç”¨çŠ¶æ€
+    std::atomic<double> lossRate{ 0.0 };   // ä¸¢åŒ…ç‡
+    QWaitCondition stateCondition;       // çŠ¶æ€æ¡ä»¶å˜é‡
 };
 
 class Udpserver : public QObject {
@@ -48,7 +48,7 @@ public:
     Udpserver(QObject* parent, QString desthost, int baseport);
     ~Udpserver();
 
-    // ºËĞÄ¹¦ÄÜ½Ó¿Ú
+    // æ–‡ä»¶åŠŸèƒ½æ¥å£
     void SetFileName(const QString& filePath);
     void StartSending();
     void StopSending();
@@ -56,22 +56,22 @@ public:
     void setLossRate(int channel, double rate);
 
 private:
-    // ÍøÂçÏà¹Ø
+    // ç½‘ç»œç›¸å…³
     SOCKET sockets[SOCKET_POOL_SIZE];
     sockaddr_in targetAddr[SOCKET_POOL_SIZE];
 
-    // ÎÄ¼şÓë¶ÓÁĞ
-    QMutex fileMutex;                   // ÎÄ¼şÂ·¾¶×¨ÓÃËø
+    // æ–‡ä»¶ç›¸å…³
+    QMutex fileMutex;                   // æ–‡ä»¶è·¯å¾„ä¸“ç”¨é”
     QString currentFilePath;
-    std::atomic<int> currentSocket{ 0 };   // ÂÖÑ¯Ö¸Õë
-    const int packetSize = 1009;         // Êı¾İ°ü´óĞ¡
+    std::atomic<int> currentSocket{ 0 };   // è½®è¯¢æŒ‡é’ˆ
+    const int packetSize = 1009;         // æ•°æ®åŒ…å¤§å°
 
-    // Í¨µÀ¹ÜÀí
+    // é€šé“ä¸Šä¸‹æ–‡
     ChannelContext channels[SOCKET_POOL_SIZE];
     QList<QThread*> workerThreads;
-    std::atomic<bool> is_running{ false }; // ÔËĞĞ×´Ì¬
+    std::atomic<bool> is_running{ false }; // è¿è¡ŒçŠ¶æ€
 
-    // ÄÚ²¿·½·¨
+    // å†…éƒ¨å‡½æ•°
     void initializeSockets();
     void fileReaderTask();
     void socketWorkerTask(int socket_index);

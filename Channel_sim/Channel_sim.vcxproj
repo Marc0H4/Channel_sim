@@ -60,13 +60,13 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
-    <IncludePath>D:\code\Channel_sim\udp_with_ulpfec（windows）\include;$(IncludePath)</IncludePath>
-    <ExternalIncludePath>D:\code\Channel_sim\udp_with_ulpfec（windows）\include;$(ExternalIncludePath)</ExternalIncludePath>
-    <LibraryPath>D:\code\Channel_sim\udp_with_ulpfec（windows）\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <ExternalIncludePath>E:\workspace\flight-test\Channel_sim\udp_with_ulpfec（windows）\include;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Link>
-      <AdditionalLibraryDirectories>D:\code\Channel_sim\udp_with_ulpfec（windows）\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>E:\workspace\flight-test\Channel_sim\udp_with_ulpfec（windows）\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>D:\code\Channel_sim\udp_with_ulpfec（windows）\lib\socketRec_ulp.lib;D:\code\Channel_sim\udp_with_ulpfec（windows）\lib\UDPsender_ulp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>

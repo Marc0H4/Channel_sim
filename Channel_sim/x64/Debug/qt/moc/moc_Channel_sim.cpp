@@ -50,7 +50,7 @@ constexpr auto qt_meta_stringdata_CLASSChannel_simENDCLASS = QtMocHelpers::strin
     "vaule",
     "getLostrate_2",
     "getLostrate_3",
-    "startmessage"
+    "start_message"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -138,7 +138,7 @@ Q_CONSTINIT const QMetaObject Channel_sim::staticMetaObject = { {
         // method 'getLostrate_3'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
-        // method 'startmessage'
+        // method 'start_message'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -159,7 +159,7 @@ void Channel_sim::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         case 6: _t->getLostrate_1((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 7: _t->getLostrate_2((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 8: _t->getLostrate_3((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 9: _t->startmessage(); break;
+        case 9: _t->start_message(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
