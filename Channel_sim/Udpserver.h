@@ -23,8 +23,11 @@ struct videoStruct {
 #pragma pack()
 
 struct SendPacket {
-    videoStruct video;    // 视频数据包
-    int socketIndex;      // 目标Socket索引
+    videoStruct video;          // 视频数据包
+	uint32_t crc32;             // CRC32校验
+	uint8_t stream_type;        // 流类型
+	uint8_t channel_seq;        // 通道序列号
+    uint8_t channel_index;      // 目标Socket索引
 };
 
 // 每个通道的独立上下文
@@ -42,7 +45,7 @@ struct ChannelContext {
 class Udpserver : public QObject {
     Q_OBJECT
 public:
-    Udpserver(QObject* parent, QString desthost, int Port);
+    Udpserver(QObject* parent, QString desthost, int baseport);
     ~Udpserver();
 
     // 核心功能接口
@@ -55,7 +58,7 @@ public:
 private:
     // 网络相关
     SOCKET sockets[SOCKET_POOL_SIZE];
-    sockaddr_in targetAddr;
+    sockaddr_in targetAddr[SOCKET_POOL_SIZE];
 
     // 文件与队列
     QMutex fileMutex;                   // 文件路径专用锁

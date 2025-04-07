@@ -40,6 +40,8 @@ constexpr auto qt_meta_stringdata_CLASSChannel_simENDCLASS = QtMocHelpers::strin
     "",
     "channel",
     "state",
+    "ChannelLostRateChanging",
+    "rate",
     "Readfile",
     "getChannelState_1",
     "getChannelState_2",
@@ -47,7 +49,8 @@ constexpr auto qt_meta_stringdata_CLASSChannel_simENDCLASS = QtMocHelpers::strin
     "getLostrate_1",
     "vaule",
     "getLostrate_2",
-    "getLostrate_3"
+    "getLostrate_3",
+    "startmessage"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -60,36 +63,40 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSChannel_simENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       8,   14, // methods
+      10,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       1,       // signalCount
+       2,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    2,   62,    2, 0x06,    1 /* Public */,
+       1,    2,   74,    2, 0x06,    1 /* Public */,
+       5,    2,   79,    2, 0x06,    4 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       5,    0,   67,    2, 0x08,    4 /* Private */,
-       6,    1,   68,    2, 0x08,    5 /* Private */,
-       7,    1,   71,    2, 0x08,    7 /* Private */,
-       8,    1,   74,    2, 0x08,    9 /* Private */,
-       9,    1,   77,    2, 0x08,   11 /* Private */,
-      11,    1,   80,    2, 0x08,   13 /* Private */,
-      12,    1,   83,    2, 0x08,   15 /* Private */,
+       7,    0,   84,    2, 0x08,    7 /* Private */,
+       8,    1,   85,    2, 0x08,    8 /* Private */,
+       9,    1,   88,    2, 0x08,   10 /* Private */,
+      10,    1,   91,    2, 0x08,   12 /* Private */,
+      11,    1,   94,    2, 0x08,   14 /* Private */,
+      13,    1,   97,    2, 0x08,   16 /* Private */,
+      14,    1,  100,    2, 0x08,   18 /* Private */,
+      15,    0,  103,    2, 0x08,   20 /* Private */,
 
  // signals: parameters
     QMetaType::Void, QMetaType::Int, QMetaType::Bool,    3,    4,
+    QMetaType::Void, QMetaType::Int, QMetaType::Double,    3,    6,
 
  // slots: parameters
     QMetaType::Void,
     QMetaType::Void, QMetaType::Int,    4,
     QMetaType::Void, QMetaType::Int,    4,
     QMetaType::Void, QMetaType::Int,    4,
-    QMetaType::Void, QMetaType::Int,   10,
-    QMetaType::Void, QMetaType::Int,   10,
-    QMetaType::Void, QMetaType::Int,   10,
+    QMetaType::Void, QMetaType::Int,   12,
+    QMetaType::Void, QMetaType::Int,   12,
+    QMetaType::Void, QMetaType::Int,   12,
+    QMetaType::Void,
 
        0        // eod
 };
@@ -107,6 +114,10 @@ Q_CONSTINIT const QMetaObject Channel_sim::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
         QtPrivate::TypeAndForceComplete<bool, std::false_type>,
+        // method 'ChannelLostRateChanging'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        QtPrivate::TypeAndForceComplete<double, std::false_type>,
         // method 'Readfile'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'getChannelState_1'
@@ -126,7 +137,9 @@ Q_CONSTINIT const QMetaObject Channel_sim::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'getLostrate_3'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<int, std::false_type>
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'startmessage'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
 } };
@@ -138,13 +151,15 @@ void Channel_sim::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         (void)_t;
         switch (_id) {
         case 0: _t->ChannelStateChanging((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<bool>>(_a[2]))); break;
-        case 1: _t->Readfile(); break;
-        case 2: _t->getChannelState_1((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 3: _t->getChannelState_2((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 4: _t->getChannelState_3((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 5: _t->getLostrate_1((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 6: _t->getLostrate_2((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 7: _t->getLostrate_3((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 1: _t->ChannelLostRateChanging((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<double>>(_a[2]))); break;
+        case 2: _t->Readfile(); break;
+        case 3: _t->getChannelState_1((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 4: _t->getChannelState_2((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 5: _t->getChannelState_3((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 6: _t->getLostrate_1((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 7: _t->getLostrate_2((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 8: _t->getLostrate_3((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 9: _t->startmessage(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -153,6 +168,13 @@ void Channel_sim::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
             using _t = void (Channel_sim::*)(int , bool );
             if (_t _q_method = &Channel_sim::ChannelStateChanging; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 0;
+                return;
+            }
+        }
+        {
+            using _t = void (Channel_sim::*)(int , double );
+            if (_t _q_method = &Channel_sim::ChannelLostRateChanging; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 1;
                 return;
             }
         }
@@ -178,13 +200,13 @@ int Channel_sim::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 8)
+        if (_id < 10)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 10;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 8)
+        if (_id < 10)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 8;
+        _id -= 10;
     }
     return _id;
 }
@@ -194,5 +216,12 @@ void Channel_sim::ChannelStateChanging(int _t1, bool _t2)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
+}
+
+// SIGNAL 1
+void Channel_sim::ChannelLostRateChanging(int _t1, double _t2)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))) };
+    QMetaObject::activate(this, &staticMetaObject, 1, _a);
 }
 QT_WARNING_POP

@@ -4,7 +4,7 @@
 #include "ui_Channel_sim.h"
 #include <QFileDialog>
 #include "Udpserver.h"
-
+#include <QStatusBar>
 
 
 class Channel_sim : public QMainWindow
@@ -17,12 +17,13 @@ public:
 
 signals:
     void ChannelStateChanging(int channel, bool state);
-
+	void ChannelLostRateChanging(int channel, double rate);
 
 private:
     Ui::Channel_simClass ui;
 	Udpserver* udp;
     QString file_name;
+	QStatusBar* stbar;
 private slots:
     void Readfile();
     void getChannelState_1(int state);
@@ -31,5 +32,5 @@ private slots:
     void getLostrate_1(int vaule);
     void getLostrate_2(int vaule);
     void getLostrate_3(int vaule);
-
+	void start_message();
 };

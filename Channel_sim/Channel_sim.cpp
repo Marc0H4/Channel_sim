@@ -4,6 +4,10 @@ Channel_sim::Channel_sim(QWidget *parent)
     : QMainWindow(parent)
 {
     ui.setupUi(this);
+
+	stbar = this->statusBar();
+	this->setStatusBar(stbar);
+
 	connect(ui.file_action,&QAction::triggered, this, &Channel_sim::Readfile);
 	connect(ui.Channel1_checkbox, &QCheckBox::stateChanged, this, &Channel_sim::getChannelState_1);
 	connect(ui.channel2_checkbox, &QCheckBox::stateChanged, this, &Channel_sim::getChannelState_2);
@@ -15,12 +19,10 @@ Channel_sim::Channel_sim(QWidget *parent)
 
 	udp = new Udpserver(this, "225.0.10.101", 5557);
 	connect(ui.Play_btn, &QPushButton::clicked, udp, &Udpserver::StartSending);
+	connect(ui.Play_btn, &QPushButton::clicked, this, &Channel_sim::start_message);
 
 	connect(this, &Channel_sim::ChannelStateChanging, udp, &Udpserver::channelStateChange);
 
-	 //state_1 = 0; // 定义全局变量
-	 //state_2 = 0; // 定义全局变量
-	 //state_3 = 0; // 定义全局变量
 
 }
 
@@ -36,6 +38,7 @@ Channel_sim::~Channel_sim()
 	disconnect(ui.packetlost_bar1, &QSlider::valueChanged, this, &Channel_sim::getLostrate_1);
 	disconnect(ui.packetlost_bar2, &QSlider::valueChanged, this, &Channel_sim::getLostrate_2);
 	disconnect(ui.packetlost_bar3, &QSlider::valueChanged, this, &Channel_sim::getLostrate_3);
+	disconnect(ui.Play_btn, &QPushButton::clicked, udp, &Udpserver::StartSending);
 
 }
 void Channel_sim::Readfile()
@@ -44,16 +47,21 @@ void Channel_sim::Readfile()
     QString runPath = QCoreApplication::applicationDirPath();//获取项目的根路径
     file_name = QFileDialog::getOpenFileName(this, QStringLiteral("选择文件"), runPath, "", nullptr, QFileDialog::DontResolveSymlinks);
 	udp->SetFileName(file_name);
+
 }
 void Channel_sim::getChannelState_1(int state)
 {
 	if (ui.Channel1_checkbox->checkState())
 	{
 		emit this->ChannelStateChanging(0,true);
+		stbar->showMessage("Channel 1 open", 3000); 
+
 	}
 	else
 	{
 		emit this->ChannelStateChanging(0,false);
+		stbar->showMessage("Channel 1 close ", 3000); 
+
 	}
 
 
@@ -63,10 +71,14 @@ void Channel_sim::getChannelState_2(int state)
 	if (ui.channel2_checkbox->checkState())
 	{
 		emit this->ChannelStateChanging(1,true);
+		stbar->showMessage("Channel 2 open", 3000);  
+
 	}
 	else
 	{
 		emit this->ChannelStateChanging(1,false);
+		stbar->showMessage("Channel 2 close", 3000);  
+
 	}
 
 }
@@ -75,21 +87,32 @@ void Channel_sim::getChannelState_3(int state)
 	if (ui.channel3_checkbox->checkState())
 	{
 		emit this->ChannelStateChanging(2,true);
+		stbar->showMessage("Channel 3 open", 3000); 
+
 	}
 	else
 	{
 		emit this->ChannelStateChanging(2,false);
+		stbar->showMessage("Channel 3 close", 3000);  
+
 	}
 }
 void Channel_sim::getLostrate_1(int vaule)
 {
-	ui.lostrate_label1->setText(QString("Drop:%%1").arg(vaule));
+	ui.lostrate_label1->setText(QString("Drop:%%1").arg((double)vaule/10));
+	emit this->ChannelLostRateChanging(0, (double)vaule / 1000.0);
 }
 void Channel_sim::getLostrate_2(int vaule)
 {
-	ui.lostrate_label2->setText(QString("Drop:%%1").arg(vaule));
+	ui.lostrate_label2->setText(QString("Drop:%%1").arg((double)vaule/10));
+	emit this->ChannelLostRateChanging(1, (double)vaule / 1000.0);
 }
 void Channel_sim::getLostrate_3(int vaule)
 {
-	ui.lostrate_label3->setText(QString("Drop:%%1").arg(vaule));
+	ui.lostrate_label3->setText(QString("Drop:%%1").arg((double)vaule/10));
+	emit this->ChannelLostRateChanging(2, (double)vaule / 1000.0);
+}
+void Channel_sim::start_message()
+{
+	stbar->showMessage("Start sending", 3000);
 }

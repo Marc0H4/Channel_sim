@@ -11,12 +11,17 @@
 #pragma comment(lib, "ws2_32.lib")
 
 // 构造函数与初始化
-Udpserver::Udpserver(QObject* parent, QString dest_host, int Port)
+Udpserver::Udpserver(QObject* parent, QString dest_host, int baseport)
     : QObject(parent) {
     memset(&targetAddr, 0, sizeof(targetAddr));
-    targetAddr.sin_family = AF_INET;
-    targetAddr.sin_port = htons(Port);
-    inet_pton(AF_INET, dest_host.toStdString().c_str(), &targetAddr.sin_addr);
+    // 3 ports
+	for (int i = 0; i < SOCKET_POOL_SIZE; ++i) {
+		targetAddr[i].sin_family = AF_INET;
+		targetAddr[i].sin_port = htons(baseport + i);
+        inet_pton(AF_INET, dest_host.toStdString().c_str(), &targetAddr[i].sin_addr);
+
+	}
+
     initializeSockets();
 }
 
@@ -80,7 +85,11 @@ void Udpserver::fileReaderTask() {
         pkt.video = baseHeader; // 复制包头
         pkt.video.idWord = target_channel;
         pkt.video.whichChannel = target_channel;
-        pkt.socketIndex = target_channel;
+        pkt.channel_index = target_channel;
+		pkt.channel_seq = target_channel;
+		pkt.stream_type = 0x01; // 流类型
+		pkt.crc32 = 0; // CRC32校验（可选）
+
         memcpy(pkt.video.videoData, buffer.constData(), buffer.size());
 
         // 写入目标通道队列
@@ -145,8 +154,8 @@ void Udpserver::socketWorkerTask(int socket_index) {
                 reinterpret_cast<char*>(&pkt.video),
                 total_length,
                 0,
-                (sockaddr*)&targetAddr,
-                sizeof(targetAddr),
+                (sockaddr*)&(targetAddr[socket_index]),
+                sizeof(targetAddr[socket_index]),
                 10,   // fec组大小
                 2,    // fec冗余包
                 3000  // 超时（us）
