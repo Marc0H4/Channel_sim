@@ -43,6 +43,18 @@
     <ClCompile Include="Udpserver.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="checks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fec_private_tables_bursty.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fec_private_tables_random.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="forward_error_correction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">

@@ -61,14 +61,17 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <IncludePath>$(IncludePath)</IncludePath>
-    <ExternalIncludePath>E:\workspace\flight-test\Channel_sim\udp_with_ulpfec（windows）\include;$(ExternalIncludePath)</ExternalIncludePath>
+    <ExternalIncludePath>E:\workspace\flight-test\Channel_sim\FEC_Encode\include;$(ExternalIncludePath)</ExternalIncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Link>
-      <AdditionalLibraryDirectories>E:\workspace\flight-test\Channel_sim\udp_with_ulpfec（windows）\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>D:\code\Channel_sim\udp_with_ulpfec（windows）\lib\socketRec_ulp.lib;D:\code\Channel_sim\udp_with_ulpfec（windows）\lib\UDPsender_ulp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
     <ClCompile>
@@ -83,6 +86,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="checks.cpp" />
+    <ClCompile Include="fec_private_tables_bursty.cpp" />
+    <ClCompile Include="fec_private_tables_random.cpp" />
+    <ClCompile Include="forward_error_correction.cpp" />
     <ClCompile Include="Udpserver.cpp" />
     <QtRcc Include="Channel_sim.qrc" />
     <QtUic Include="Channel_sim.ui" />

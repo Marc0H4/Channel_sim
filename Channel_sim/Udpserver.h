@@ -6,10 +6,12 @@
 #include <QWaitCondition>
 #include <deque>
 #include <atomic>
-#include "udp_with_ulpfec.h"
-#include "simple_client_server.h"
-#pragma pack(1)
-struct videoStruct {
+#include <memory> // <--- 添加 include
+
+#include "udp_with_ulpfec.h" // 包含 ForwardErrorCorrection 定义
+
+#pragma pack(1) // 使用 push 保存当前对齐设置
+struct videoStruct { 
     unsigned int  sysWord;       // 系统标识
     unsigned char idWord;        // 通道标识
     unsigned int  nowTime;       // 时间戳
@@ -20,26 +22,29 @@ struct videoStruct {
     unsigned short packetSize;   // 数据包大小
     unsigned char videoData[10000]; // 视频数据
 };
-#pragma pack()
+#pragma pack() // 恢复之前的对齐设置
 
+#pragma pack(1)
 struct SendPacket {
-    videoStruct video;          // 视频数据包
-    uint32_t crc32;             // CRC32校验
-    uint8_t stream_type;        // 流类型
-    uint8_t channel_seq;        // 通道序号
-    uint8_t channel_index;      // 目标Socket索引
+    std::unique_ptr<ForwardErrorCorrection::Packet> packet_to_send;  //FEC包
+    uint32_t crc32 = 0;         // CRC32校验
+    uint8_t stream_type = 0x01; // 流类型 
+    uint8_t channel_index;      // 目标通道号
+    uint8_t seq;
+    size_t actual_payload_size; // 负载大小
 };
-
+#pragma pack()
 // 每个通道的上下文
 struct ChannelContext {
-    std::deque<SendPacket> packetQueue;  // 数据包队列
-    QMutex queueMutex;                   // 队列专用锁
-    QWaitCondition queueCondition;       // 队列条件变量
+    // 队列现在存储 SendPacket 对象
+    std::deque<SendPacket> packetQueue;
+    QMutex queueMutex;
+    QWaitCondition queueCondition;
 
-    QMutex stateMutex;                   // 状态专用锁
-    std::atomic<int> enabled{ 0 };         // 通道启用状态
-    std::atomic<double> lossRate{ 0.0 };   // 丢包率
-    QWaitCondition stateCondition;       // 状态条件变量
+    QMutex stateMutex;
+    std::atomic<int> enabled{ 0 };
+    std::atomic<double> lossRate{ 0.0 };
+    QWaitCondition stateCondition;
 };
 
 class Udpserver : public QObject {
@@ -47,6 +52,16 @@ class Udpserver : public QObject {
 public:
     Udpserver(QObject* parent, QString desthost, int baseport);
     ~Udpserver();
+
+    // --- 防止拷贝 ---
+    Udpserver(const Udpserver&) = delete;
+    Udpserver& operator=(const Udpserver&) = delete;
+
+    // --- （可选）允许移动 ---
+    // QObject 通常不可移动，所以这里也删除移动操作
+    Udpserver(Udpserver&&) = delete;
+    Udpserver& operator=(Udpserver&&) = delete;
+
 
     // 文件功能接口
     void SetFileName(const QString& filePath);
@@ -61,15 +76,25 @@ private:
     sockaddr_in targetAddr[SOCKET_POOL_SIZE];
 
     // 文件相关
-    QMutex fileMutex;                   // 文件路径专用锁
+    QMutex fileMutex;
     QString currentFilePath;
-    std::atomic<int> currentSocket{ 0 };   // 轮询指针
-    const int packetSize = 1009;         // 数据包大小
-
+    std::atomic<int> currentSocket{ 0 };
+    const int flightpkt_header_size = 15; // 试飞院的头大小
+    const size_t fec_header_size = 6;     // FEC 的头大小
+    const size_t packet_header_size = 7;  // 协议的头大小
+    const int readChunkSize = 1009; // 文件读取块大小 (可以调整)
+    const int total_length = readChunkSize + packet_header_size + fec_header_size + flightpkt_header_size;
+    int sysword = 0;
+    std::atomic<uint8_t> globalSeqCounter{ 0 };
     // 通道上下文
     ChannelContext channels[SOCKET_POOL_SIZE];
     QList<QThread*> workerThreads;
-    std::atomic<bool> is_running{ false }; // 运行状态
+    std::atomic<bool> is_running{ false };
+
+    //FEC相关
+    ForwardErrorCorrection fec; // FEC对象 (包含内部 buffer_packets)
+    const int fec_k = 10; // 每组多少个源数据包
+    const int fec_r = 2;  // 每组多少个冗余包
 
     // 内部函数
     void initializeSockets();

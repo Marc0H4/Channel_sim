@@ -1,3 +1,7 @@
+E:\workspace\flight-test\Channel_sim\Channel_sim\checks.cpp;E:\workspace\flight-test\Channel_sim\Channel_sim\x64\Debug\checks.obj
+E:\workspace\flight-test\Channel_sim\Channel_sim\fec_private_tables_bursty.cpp;E:\workspace\flight-test\Channel_sim\Channel_sim\x64\Debug\fec_private_tables_bursty.obj
+E:\workspace\flight-test\Channel_sim\Channel_sim\fec_private_tables_random.cpp;E:\workspace\flight-test\Channel_sim\Channel_sim\x64\Debug\fec_private_tables_random.obj
+E:\workspace\flight-test\Channel_sim\Channel_sim\forward_error_correction.cpp;E:\workspace\flight-test\Channel_sim\Channel_sim\x64\Debug\forward_error_correction.obj
 E:\workspace\flight-test\Channel_sim\Channel_sim\Udpserver.cpp;E:\workspace\flight-test\Channel_sim\Channel_sim\x64\Debug\Udpserver.obj
 E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp;E:\workspace\flight-test\Channel_sim\Channel_sim\x64\Debug\Channel_sim.obj
 E:\workspace\flight-test\Channel_sim\Channel_sim\main.cpp;E:\workspace\flight-test\Channel_sim\Channel_sim\x64\Debug\main.obj

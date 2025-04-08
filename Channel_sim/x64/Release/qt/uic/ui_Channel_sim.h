@@ -21,6 +21,7 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QProgressBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QScrollBar>
 #include <QtWidgets/QStatusBar>
@@ -63,6 +64,7 @@ public:
     QHBoxLayout *horizontalLayout;
     QPushButton *Play_btn;
     QPushButton *Stop_btn;
+    QProgressBar *progressBar;
     QStatusBar *statusBar;
 
     void setupUi(QMainWindow *Channel_simClass)
@@ -172,6 +174,7 @@ public:
 
         lostrate_label3 = new QLabel(layoutWidget);
         lostrate_label3->setObjectName("lostrate_label3");
+        lostrate_label3->setMidLineWidth(-1);
 
         verticalLayout_2->addWidget(lostrate_label3);
 
@@ -217,6 +220,10 @@ public:
 
         horizontalLayout->addWidget(Stop_btn);
 
+        progressBar = new QProgressBar(dockWidgetContents);
+        progressBar->setObjectName("progressBar");
+        progressBar->setGeometry(QRect(340, 0, 251, 23));
+        progressBar->setValue(24);
         tooldock->setWidget(dockWidgetContents);
         Channel_simClass->addDockWidget(Qt::DockWidgetArea::BottomDockWidgetArea, tooldock);
         statusBar = new QStatusBar(Channel_simClass);
@@ -247,11 +254,11 @@ public:
         menu->setTitle(QCoreApplication::translate("Channel_simClass", "\346\226\207\344\273\266", nullptr));
         view_action->setTitle(QCoreApplication::translate("Channel_simClass", "\350\247\206\345\233\276", nullptr));
         Channel1_checkbox->setText(QCoreApplication::translate("Channel_simClass", "\344\277\241\351\201\2231", nullptr));
-        lostrate_label1->setText(QCoreApplication::translate("Channel_simClass", "\344\270\242\345\214\205\347\216\207\357\274\232", nullptr));
+        lostrate_label1->setText(QCoreApplication::translate("Channel_simClass", "Drop\357\274\232", nullptr));
         channel2_checkbox->setText(QCoreApplication::translate("Channel_simClass", "\344\277\241\351\201\2232", nullptr));
-        lostrate_label2->setText(QCoreApplication::translate("Channel_simClass", "\344\270\242\345\214\205\347\216\207\357\274\232", nullptr));
+        lostrate_label2->setText(QCoreApplication::translate("Channel_simClass", "Drop\357\274\232", nullptr));
         channel3_checkbox->setText(QCoreApplication::translate("Channel_simClass", "\344\277\241\351\201\2233", nullptr));
-        lostrate_label3->setText(QCoreApplication::translate("Channel_simClass", "\344\270\242\345\214\205\347\216\207\357\274\232", nullptr));
+        lostrate_label3->setText(QCoreApplication::translate("Channel_simClass", "Drop\357\274\232", nullptr));
         Play_btn->setText(QString());
         Stop_btn->setText(QString());
     } // retranslateUi
