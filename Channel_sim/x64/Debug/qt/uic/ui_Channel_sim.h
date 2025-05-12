@@ -123,7 +123,7 @@ public:
         listWidget->setGeometry(QRect(0, 0, 131, 321));
         layoutWidget = new QWidget(dockWidgetContents_4);
         layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(0, 10, 121, 241));
+        layoutWidget->setGeometry(QRect(20, 10, 101, 241));
         verticalLayout_2 = new QVBoxLayout(layoutWidget);
         verticalLayout_2->setSpacing(6);
         verticalLayout_2->setContentsMargins(11, 11, 11, 11);

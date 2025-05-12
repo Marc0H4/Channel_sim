@@ -20,20 +20,21 @@ struct videoStruct {
     unsigned char whichChannel;  // 当前通道
     unsigned char videoFormat;   // 视频格式
     unsigned short packetSize;   // 数据包大小
-    unsigned char videoData[10000]; // 视频数据
+    unsigned char videoData[1009]; // 视频数据
 };
 #pragma pack() // 恢复之前的对齐设置
 
-#pragma pack(1)
+//#pragma pack(1)
 struct SendPacket {
     std::unique_ptr<ForwardErrorCorrection::Packet> packet_to_send;  //FEC包
     uint32_t crc32 = 0;         // CRC32校验
     uint8_t stream_type = 0x01; // 流类型 
     uint8_t channel_index;      // 目标通道号
-    uint8_t seq;
+    uint8_t seq;                // 序列号
+    // 负载大小不是头信息，只是用于方便计算
     size_t actual_payload_size; // 负载大小
 };
-#pragma pack()
+//#pragma pack()
 // 每个通道的上下文
 struct ChannelContext {
     // 队列现在存储 SendPacket 对象

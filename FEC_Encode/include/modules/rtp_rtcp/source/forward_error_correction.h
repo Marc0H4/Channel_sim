@@ -35,7 +35,7 @@ class ForwardErrorCorrection {
     static constexpr size_t kMaxDataSize = 2000;
     uint8_t data[kMaxDataSize];  // 数据字段内容（最大长度为2000字节）
 
-    //marco:需要发送的网络数据储存在对象内部，其他对象只能获得内存地址，要将真正的数据发发送出去需要解包和序列化
+    //yuhang:需要发送的网络数据储存在对象内部，其他对象只能获得内存地址，要将真正的数据发发送出去需要使用智能指针引用，解包和序列化
     size_t Serialize(char* buffer, size_t buffer_size, size_t payload_size_to_write) const;
 
   };

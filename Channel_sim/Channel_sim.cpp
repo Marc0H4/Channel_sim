@@ -17,10 +17,10 @@ Channel_sim::Channel_sim(QWidget *parent)
 	connect(ui.packetlost_bar2, &QSlider::valueChanged, this, &Channel_sim::getLostrate_2);
 	connect(ui.packetlost_bar3, &QSlider::valueChanged, this, &Channel_sim::getLostrate_3);
 
-	udp = new Udpserver(this, "225.0.10.101", 555);
+	udp = new Udpserver(this, "225.0.10.101", 600);
 	connect(ui.Play_btn, &QPushButton::clicked, udp, &Udpserver::StartSending);
 	connect(ui.Play_btn, &QPushButton::clicked, this, &Channel_sim::start_message);
-
+	connect(this, &Channel_sim::ChannelLostRateChanging, udp, &Udpserver::setLossRate);
 	connect(this, &Channel_sim::ChannelStateChanging, udp, &Udpserver::channelStateChange);
 
 

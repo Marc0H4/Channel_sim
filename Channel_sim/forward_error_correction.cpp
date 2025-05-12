@@ -449,5 +449,12 @@ void ForwardErrorCorrection::PacketByFEC(const char* buf, int len, int k, int r)
 		// ¸üÐÂgroup_numberºÍsequence_number
 		group_number++;
 		sequence_number = 0;
+
+		media_packets.clear();
+		for (auto fec_packet : fec_packets) {
+			delete fec_packet;
+		}
+		fec_packets.clear();
+		
 	}
 }
