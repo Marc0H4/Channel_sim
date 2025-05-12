@@ -22,13 +22,33 @@ Channel_sim::Channel_sim(QWidget *parent)
 	connect(ui.Play_btn, &QPushButton::clicked, this, &Channel_sim::start_message);
 	connect(this, &Channel_sim::ChannelLostRateChanging, udp, &Udpserver::setLossRate);
 	connect(this, &Channel_sim::ChannelStateChanging, udp, &Udpserver::channelStateChange);
+	if (LogEmitter::instance()) {
+		connect(LogEmitter::instance(), &LogEmitter::newLogMessage,
+			this, &Channel_sim::appendLogToUi);
+	}
+	else {
+		// 这种情况理论上不应该发生，因为 Q_GLOBAL_STATIC 会确保实例存在
+		qWarning("LogEmitter 实例获取失败，无法连接日志信号。");
+	}
 
-
+	qDebug("Channel_sim 构造函数执行完毕。"); // 这条日志也应该显示在UI上
 }
+
+
 
 Channel_sim::~Channel_sim()
 {
+	if (LogEmitter::instance()) {
+		bool disconnected = disconnect(LogEmitter::instance(), &LogEmitter::newLogMessage,
+			this, &Channel_sim::appendLogToUi);
 
+	}
+
+
+	disconnect(ui.file_action, &QAction::triggered, this, &Channel_sim::Readfile);
+	disconnect(ui.Channel1_checkbox, &QCheckBox::stateChanged, this, &Channel_sim::getChannelState_1);
+
+	disconnect(ui.Play_btn, &QPushButton::clicked, udp, &Udpserver::StartSending);
     disconnect(ui.file_action, &QAction::triggered, this, &Channel_sim::Readfile);
 
 	disconnect(ui.Channel1_checkbox, &QCheckBox::stateChanged, this, &Channel_sim::getChannelState_1);
@@ -115,4 +135,21 @@ void Channel_sim::getLostrate_3(int vaule)
 void Channel_sim::start_message()
 {
 	stbar->showMessage("Start sending", 3000);
+}
+void Channel_sim::appendLogToUi(const QString& message)
+{
+
+	if (ui.logTextEdit) { 
+		ui.logTextEdit->append(message); 
+		// 可以选择滚动到底部
+		// ui.logTextEdit->verticalScrollBar()->setValue(ui.logTextEdit->verticalScrollBar()->maximum());
+	}
+	else {
+		if (previousMessageHandler) {
+			previousMessageHandler(QtDebugMsg, QMessageLogContext(), "UI日志控件未找到: " + message);
+		}
+		else {
+			fprintf(stderr, "UI日志控件未找到: %s\n", qPrintable(message));
+		}
+	}
 }

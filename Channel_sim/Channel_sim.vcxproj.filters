@@ -55,6 +55,9 @@
     <ClCompile Include="forward_error_correction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="LogEmitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
@@ -68,6 +71,9 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="Udpserver.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="LogEmitter.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

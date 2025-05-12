@@ -90,6 +90,7 @@
     <ClCompile Include="fec_private_tables_bursty.cpp" />
     <ClCompile Include="fec_private_tables_random.cpp" />
     <ClCompile Include="forward_error_correction.cpp" />
+    <ClCompile Include="LogEmitter.cpp" />
     <ClCompile Include="Udpserver.cpp" />
     <QtRcc Include="Channel_sim.qrc" />
     <QtUic Include="Channel_sim.ui" />
@@ -98,6 +99,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="LogEmitter.h" />
     <ClInclude Include="resource.h" />
     <QtMoc Include="Udpserver.h" />
   </ItemGroup>

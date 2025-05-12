@@ -5,8 +5,8 @@
 #include <QFileDialog>
 #include "Udpserver.h"
 #include <QStatusBar>
-
-
+#include "logemitter.h"
+#include <QTextEdit>
 class Channel_sim : public QMainWindow
 {
     Q_OBJECT
@@ -33,4 +33,5 @@ private slots:
     void getLostrate_2(int vaule);
     void getLostrate_3(int vaule);
 	void start_message();
+    void appendLogToUi(const QString& message);
 };

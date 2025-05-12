@@ -1,449 +1,1058 @@
 ﻿   Qt/MSBuild: 3.3.1.1
    Qt: 6.7.2
-  Udpserver.cpp
+  Channel_sim.cpp
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x55a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x55c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x55e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x560 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x561 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x565 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x569 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x56c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x56f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x570 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x572 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x573 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x574 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x589 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x58a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x58d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x58e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x591 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x592 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x593 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x594 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x5b2 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x5b3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x5b4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x5b5 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x5b9 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x5ba 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x5bd 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x5be 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x5c0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x5c1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x5c2 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x5c3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x5c4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x5c5 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x5c7 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x5c9 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x5ca 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x5cc 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x5cf 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x5f0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x5f1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x5f2 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x5f4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x5f5 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x5f6 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x5fa 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x5fc 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x5fe 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x601 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x609 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x60b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x60d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x615 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x616 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x618 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x61a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x61b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x61f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x707 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x709 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x70a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x70b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x70d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x711 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x713 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x716 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x717 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x718 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x719 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x71e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x71f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x720 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x721 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x722 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x726 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x728 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x729 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x72b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x72c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x72f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x731 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x732 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x736 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x737 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x738 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x739 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x74a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x74e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x74f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x751 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x75a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x75b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x75f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x762 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x765 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x766 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x767 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x768 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x76a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x76c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x76d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x76e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x772 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x773 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x775 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x777 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x778 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x77c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x77e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x780 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x782 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x784 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x785 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x786 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x787 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x7a5 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x7c3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x7c4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x7c6 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x7c7 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x7c8 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x7ce 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x7cf 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x7d0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x7f7 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x7f9 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x7fc 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x809 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x827 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x828 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x82a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x82b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x82c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x82f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x830 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x832 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x834 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x839 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x83a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x83b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x83e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x844 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x846 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x847 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x85e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x862 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x864 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x865 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x872 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x873 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x877 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x878 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x87c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x87d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x87e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x880 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x882 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x883 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x88a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x890 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x891 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x894 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x895 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x896 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x897 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x898 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x899 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x89c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x89d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x89e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x8a1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x8a8 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x8a9 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x8ad 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x8ae 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x8af 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x8b3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x8b4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x8c2 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x8c7 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x8c8 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x8c9 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x8ca 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x98e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x990 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0xd4a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0xd4b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0xd4f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0xd52 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0xd55 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0xd58 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0xd59 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0xda1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0xda3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0xda5 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0xda6 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x14c0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x14c1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x14c3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x14c5 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x14c6 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x14c8 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x14c9 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x14cd 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x14ce 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x14d1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x15a6 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x15aa 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x15ad 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x15b0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x15b2 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x15b3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x15ea 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x15ee 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x15f1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x15f4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x15f6 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+E:\workspace\flight-test\Channel_sim\Channel_sim\Channel_sim.cpp(1,1): warning C4828: 文件包含在偏移 0x15f7 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\include\simple_client_server.h(1,1): warning C4828: 文件包含在偏移 0xb3d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\include\simple_client_server.h(1,1): warning C4828: 文件包含在偏移 0xb42 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\include\simple_client_server.h(1,1): warning C4828: 文件包含在偏移 0xb43 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\include\simple_client_server.h(1,1): warning C4828: 文件包含在偏移 0xb44 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\include\simple_client_server.h(1,1): warning C4828: 文件包含在偏移 0xb48 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\include\simple_client_server.h(1,1): warning C4828: 文件包含在偏移 0xb4b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\include\simple_client_server.h(1,1): warning C4828: 文件包含在偏移 0xb4c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\include\simple_client_server.h(1,1): warning C4828: 文件包含在偏移 0xb52 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\include\simple_client_server.h(1,1): warning C4828: 文件包含在偏移 0xb54 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\include\simple_client_server.h(1,1): warning C4828: 文件包含在偏移 0xb55 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\include\simple_client_server.h(1,1): warning C4828: 文件包含在偏移 0xb59 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\include\simple_client_server.h(1,1): warning C4828: 文件包含在偏移 0xb5c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\include\simple_client_server.h(1,1): warning C4828: 文件包含在偏移 0xb5d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\include\simple_client_server.h(1,1): warning C4828: 文件包含在偏移 0xb5e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\include\simple_client_server.h(1,1): warning C4828: 文件包含在偏移 0xb5f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\include\simple_client_server.h(1,1): warning C4828: 文件包含在偏移 0xb61 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\include\simple_client_server.h(1,1): warning C4828: 文件包含在偏移 0xb63 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\include\simple_client_server.h(1,1): warning C4828: 文件包含在偏移 0xb64 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\include\simple_client_server.h(1,1): warning C4828: 文件包含在偏移 0xb65 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x34f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x351 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x354 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x356 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x358 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x35b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x387 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x389 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x38c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x38e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x391 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x3bf 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x3c1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x3c4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x3c6 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x3c9 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x3cb 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x3cc 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x3ce 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x3d0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x3fb 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x3fd 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x400 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x402 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x403 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x406 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x407 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x409 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x40a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x40b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x439 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x43b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x43e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x440 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x442 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x445 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x447 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x448 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x449 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4a4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4a6 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4a7 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4ab 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4ad 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4b1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4b2 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4b4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4b9 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4bb 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4c0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4c2 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4c5 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4d5 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4d9 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4da 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4db 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4dd 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4de 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4e0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4e1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4e3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4e5 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4e8 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4e9 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4ea 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4ed 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4ee 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4f0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4f4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4f5 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4f6 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4f7 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4f9 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4fb 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4fc 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x4fe 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x504 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x50a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x50f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x510 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x513 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x514 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x515 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x517 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x519 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x51a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x51c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x51d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x520 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x521 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x522 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x523 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x525 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x526 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x52a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x52f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x531 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x533 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x537 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x539 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x53b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x53d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x53e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x53f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x540 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x543 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x544 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x546 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x54a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x70d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x70e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x710 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x711 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x712 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x71f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x720 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction.h(1,1): warning C4828: 文件包含在偏移 0x721 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction_internal.h(1,1): warning C4828: 文件包含在偏移 0x579 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction_internal.h(1,1): warning C4828: 文件包含在偏移 0x57c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction_internal.h(1,1): warning C4828: 文件包含在偏移 0x57f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction_internal.h(1,1): warning C4828: 文件包含在偏移 0x581 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction_internal.h(1,1): warning C4828: 文件包含在偏移 0x582 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction_internal.h(1,1): warning C4828: 文件包含在偏移 0x583 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction_internal.h(1,1): warning C4828: 文件包含在偏移 0x584 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction_internal.h(1,1): warning C4828: 文件包含在偏移 0x585 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction_internal.h(1,1): warning C4828: 文件包含在偏移 0x586 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction_internal.h(1,1): warning C4828: 文件包含在偏移 0x587 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\FEC_Encode\include\modules\rtp_rtcp\source\forward_error_correction_internal.h(1,1): warning C4828: 文件包含在偏移 0x588 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
   
 E:\workspace\flight-test\Channel_sim\Channel_sim\Udpserver.h(87,83): warning C4267: “初始化”: 从“size_t”转换到“const int”，可能丢失数据
-  (编译源文件“Udpserver.cpp”)
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0xea 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0xee 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0xef 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0xf0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0xf1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0xf2 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0xf4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0xf5 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0xfb 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x1d3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x1d5 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x1d8 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x1db 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x1dc 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x1dd 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x1e1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x1ff 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x201 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x203 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x205 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x206 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x207 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x209 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x20d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x20e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x20f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x213 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x215 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x216 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x21a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x21b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x21c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x22b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x22c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x22e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x22f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x231 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x232 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x234 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x235 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x236 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x23a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x23d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x23e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x2ba 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x2cd 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x2ce 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x2cf 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x2d0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x2d1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x2d2 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x2df 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x2e2 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x2e3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x2e4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x2ea 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x2ec 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x2ee 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x2ef 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x2f1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x2f3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x2f4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x2f5 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x2f6 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x2f8 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x2fa 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x2ff 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x300 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x301 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x302 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x303 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x304 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x305 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x306 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x308 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x309 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x30a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x30c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x310 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x311 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x312 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x316 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x318 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x319 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x31a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x31b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x31c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x31e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x31f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x322 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x325 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x327 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x329 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x3c4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x3c7 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x3cb 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x3cc 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x3ce 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x3d2 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x3d3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x3d4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x3d8 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x3da 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x3dc 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x3e0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x3e1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x3e2 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x3e4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x3e5 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x3e7 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x3e9 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x3f0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x3f2 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x3f3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x3f4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x45f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x461 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x463 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x464 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x465 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x466 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x46b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x46f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x470 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x471 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x472 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x475 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x476 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x478 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
+  
+E:\workspace\flight-test\Channel_sim\Channel_sim\logemitter.h(1,1): warning C4828: 文件包含在偏移 0x479 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  (编译源文件“Channel_sim.cpp”)
   
   Channel_sim.vcxproj -> E:\workspace\flight-test\Channel_sim\x64\Debug\Channel_sim.exe
   'pwsh.exe' 不是内部或外部命令，也不是可运行的程序

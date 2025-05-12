@@ -25,6 +25,7 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QScrollBar>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
@@ -40,6 +41,7 @@ public:
     QAction *actionvideo;
     QWidget *centralWidget;
     QVBoxLayout *verticalLayout;
+    QTextEdit *logTextEdit;
     QMenuBar *menuBar;
     QMenu *menu;
     QMenu *view_action;
@@ -94,6 +96,11 @@ public:
         verticalLayout->setSpacing(6);
         verticalLayout->setContentsMargins(11, 11, 11, 11);
         verticalLayout->setObjectName("verticalLayout");
+        logTextEdit = new QTextEdit(centralWidget);
+        logTextEdit->setObjectName("logTextEdit");
+
+        verticalLayout->addWidget(logTextEdit);
+
         Channel_simClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(Channel_simClass);
         menuBar->setObjectName("menuBar");
